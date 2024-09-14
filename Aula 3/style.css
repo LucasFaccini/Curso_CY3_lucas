@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Gentium Book Plus", serif;
+    background-color: #4f4661;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+}
+main{
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black ;
+    padding: 50px;
+}
+h1{
+    margin-bottom: 30px;
+}
+div.container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+div.cont
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-weight: bolder;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
