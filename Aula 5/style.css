@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 30px;
+}
+
+.container {
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+h1 {
+    font-size: 50px;
+}
+table tbody{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+table th {
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+table tr.cabecalho {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+table tr.infos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    font-size: 26px;
+    background-color: rgb(224, 224, 224);
+    row-gap: 40px;
+    border-radius: 5px;
+}
+
+table tr td {
+    padding: 10px;
+}
+
+.add{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(184, 184, 184);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; 
+    font-size: 26px;
+    transition: background 0.3s ease-in-out
+}
+.botao_add{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+.add:hover{
+    background-color: rgb(123, 123, 123);
+    transition: background 0.3s ease-in-out
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+td{
+    border: 0.5px rgb(83, 83, 83);
+}
+
+.ho:hover{
+    background-color: rgb(123, 123, 123);
+    transition: background 0.3s ease-in-out
+}
+.ho{
+    background-color: rgb(123, 123, 123);
+    transition: background 0.3s ease-in-out
+}
