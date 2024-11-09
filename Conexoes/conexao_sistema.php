@@ -1,6 +1,6 @@
 <?php 
 $servidor ='localhost';
-$banco_de_dados = 'sistema_login';
+$banco_de_dados = 'cy3_sab_10h';
 $usuario = 'root';
 $senha = '';
 

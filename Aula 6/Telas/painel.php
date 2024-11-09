@@ -1,18 +1,33 @@
 <?php
         include('../../Conexoes/conexao_sistema.php');
-        session_start();
-        $id = $_SESSION['id'];
-        $sql_codigo = "SELECT * FROM itens WHERE id='$id' ";
-        
-        $sql_codigo_usuario = "SELECT nome FROM cliente WHERE id='$id'";
+        // if(!isset($_SESSION)){
+        //     header("Location: login.php");
+        // }
+        // else{
+            session_start();
+            if($_GET['cadastro'] == 'sim'){
+                $nome = $_SESSION['nome'];
+                $sql_codigo_usuario = "SELECT id FROM clente WHERE id='$id'";
+                $resultado_id = $mysqli->query($sql_codigo_usuario);
+                $conteudo = $resultado_id->fetch_assoc();
+                $id = $conteudo['id'];
+            }
+            else{
+                $id = $_SESSION['id'];
+                $sql_codigo_usuario = "SELECT nome FROM cliente WHERE id='$id'";
+    
+                $resultado_nome = $mysqli->query($sql_codigo_usuario);
+                $nome_usuario = $resultado_nome->fetch_assoc();
 
-        $resultado_nome = $mysqli->query($sql_codigo_usuario);
+                $nome = $nome_usuario['nome'];
+            }
 
-        $nome_usuario = $resultado_nome->fetch_assoc();
-
-        $resultado = $mysqli->query($sql_codigo);
-
-        $nome = $nome_usuario['nome'];
+            $sql_codigo = "SELECT * FROM itens WHERE id_user='$id' ";
+            
+            $resultado = $mysqli->query($sql_codigo);
+    
+            
+        //}
 ?>
 
 
@@ -53,5 +68,10 @@
             </tr>
         </table>
     </main>
+    <div>
+    <?php
+        echo '<a type="submit" class="botao_logout" href="logout.php?">Sair</a>';
+    ?>
+    </div>
 </body>
 </html>
