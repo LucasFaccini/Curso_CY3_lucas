@@ -3,7 +3,6 @@
 
     $sql_codigo = 'SELECT * FROM fornecedores';
     $resultado = $mysqli->query($sql_codigo);
-    var_dump($resultado);
 
     if ($resultado->num_rows > 0) {
         $infos = $resultado->fetch_all();
@@ -32,7 +31,7 @@
                 <th>Ações</th>
             </tr>
             <?php
-            if (cont($infos) == 0){
+            if (count($infos) == 0){
                 echo '<tr>
                         <td colspan="4">Nenhum registrado</td>
                     </tr>';
@@ -45,7 +44,7 @@
                         <td>'.$id.'</td>
                         <td>'.$nome.'</td>
                         <td>'.$cidade.'</td>
-                        <td><a href="">editar</a> | <a href="../../db/deletar_fornecedor.php?id='.$id.'">deletar</a></td>
+                        <td><a href="formulario_editar.php?id='.$id.'">editar</a> | <a href="../../db/deletar_fornecedor.php?id='.$id.'">deletar</a></td>
                     </tr>';
                 }
             }
