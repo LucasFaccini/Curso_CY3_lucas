@@ -31,20 +31,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Editar</title>
+    <link rel="stylesheet" href="../../css/editar.css">
+    <link rel="icon" type="image/png" href="../../imagens/abaimgs.png">
 </head>
 <body>
-    <h1>Editar item</h1>
     <form action="" method="post">
+        <h1>Editar item</h1>
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         <label>Recurso</label>
-        <input type="text" name="nome" value="<?php echo $item['nome']; ?>" required>
+        <input type="text" name="nome" value="<?php echo $item['nome']; ?>" required autocomplete="off"> 
         <label>Quantidade Necessaria</label>
-        <input type="number" name="qtd_necessaria" value="<?php echo $item['qtd_necessaria']; ?>" required>
+        <input type="number" name="qtd_necessaria" value="<?php echo $item['qtd_necessaria']; ?>" required autocomplete="off"> 
 
         <input type="submit" value="Salvar">
+        <a href="../painel.php">Voltar</a>
     </form>
-    <a href="painel.php">Voltar</a>
 </body>
 </html>

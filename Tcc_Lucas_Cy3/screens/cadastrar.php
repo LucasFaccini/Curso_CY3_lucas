@@ -27,21 +27,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/cadastrar.css">
+    <link rel="icon" type="image/png" href="../imagens/abaimgs.png">
+    <title>Cadastrar</title>
+    <script>
+        window.onload = function() {
+            document.getElementById("nome").value = "";
+            document.getElementById("user").value = "";
+            document.getElementById("pass").value = "";
+        };
+    </script>
 </head>
 <body>
-    <h1>Cadastrar cliente</h1>
     <form action="" method="post">
+        <h1>Cadastrar cliente</h1>
         <label>Nome</label>
-        <input type="text" name="nome" required>
-        <label>Usuario</label>
-        <input type="text" name="user" required>
+        <input type="text" name="nome" placeholder="Digite seu nome" required autocomplete="off">
+        <label>Usuário</label>
+        <input type="text" name="user" placeholder="Crie seu usuário" required autocomplete="off">
         <label>Senha</label>
-        <input type="text" name="pass" required>
+        <input type="text" name="pass" placeholder="Crie sua senha" required autocomplete="off">
 
         <input type="submit" value="Cadastrar">
+        <a href="login.php">Voltar</a>
     </form>
-    <a href="login.php">Voltar</a>
 </body>
 </html>

@@ -26,18 +26,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/adicionar.css">
+    <link rel="icon" type="image/png" href="../../imagens/abaimgs.png">
 </head>
 <body>
-    <h1>Adicionar item</h1>
     <form action="" method="post">
+        <h1>Adicionar item</h1>
         <label>Recurso</label>
-        <input type="text" name="nome" required>
+        <input type="text" name="nome" required autocomplete="off">
         <label>Quantidade Necessaria</label>
-        <input type="number" name="qtd_necessaria" required>
+        <input type="number" name="qtd_necessaria" required autocomplete="off">
 
         <input type="submit" value="Salvar">
+        <a href="../painel.php">Voltar</a>
     </form>
-    <a href="../painel.php">Voltar</a>
 </body>
 </html>

@@ -29,14 +29,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources</title>
-    <link rel="stylesheet" href="painel.css">
+    <link rel="stylesheet" href="../css/painel.css">
     <link rel="icon" type="image/png" href="../imagens/abaimgs.png">
 </head>
 <body>   
-    <h1>
-        Necessary Resources - <?php echo $nome; ?>
-    </h1>
     <main class="container">
+        <h1>
+            NECESSARY RESOURCES FOR UPGRADES TO - <?php echo $nome; ?>
+        </h1>
         <table>
             <tr class="cabecalho">
                 <th>Recurso</th>
