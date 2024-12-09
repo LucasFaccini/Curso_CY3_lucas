@@ -4,7 +4,7 @@
     $nome = $_POST['nome'];
     $cidade = $_POST['cidade'];
 
-    $sql_codigo = "INSERT INTO fornecedores (nome,cidade) VALUES ('$nome','$cidade)";
+    $sql_codigo = "INSERT INTO fornecedores (nome,cidade) VALUES ('$nome','$cidade')";
 
     $resultado = $mysqli->query($sql_codigo);
 
