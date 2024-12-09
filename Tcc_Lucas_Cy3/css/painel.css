@@ -8,7 +8,10 @@
 }
 
 body {
-    background: #121212;
+    background-image: url('../imagens/bgimgns.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -27,13 +30,13 @@ h1 {
 }
 
 main.container {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.849);
     border: 2px solid #ffffff;
     border-radius: 10px;
     padding: 20px;
     width: 80%;
     max-width: 900px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -136,4 +139,65 @@ table td:not(:last-child)::after {
 
 table td:first-child {
     text-transform: uppercase;
+}
+
+.conteudo {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lista, .calculadora {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.lista h2, .calculadora h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-shadow: 0 0 10px #d3d3d3;
+}
+
+.calculadora form div {
+    margin-bottom: 15px;
+}
+
+.calculadora input[type="number"],
+.calculadora input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    background: #242424;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.botoes-calc {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.botoes-calc button {
+    background: #ffffff;
+    color: #121212;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.botoes-calc button:hover {
+    transform: scale(1.1);
+    background: #d3d3d3;
 }

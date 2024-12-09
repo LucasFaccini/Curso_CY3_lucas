@@ -8,7 +8,10 @@
 }
 
 body {
-    background: #121212;
+    background-image: url('../imagens/bgimgns.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -27,12 +30,12 @@ h1 {
 }
 
 form {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(0, 0, 0);
     border: 2px solid #ffffff;
     border-radius: 10px;
     padding: 20px;
     width: 80%;
-    max-width: 400px; /* Ajustado para um tamanho adequado para o formulário */
+    max-width: 400px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     text-align: center;
 }
@@ -58,7 +61,7 @@ input[type="text"]:focus, input[type="number"]:focus {
 input[type="submit"] {
     width: 100%;
     padding: 12px;
-    background-color: #000000;
+    background-color: #272727;
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -70,7 +73,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #161616;
+    background-color: #6e6e6e;
 }
 
 a {
