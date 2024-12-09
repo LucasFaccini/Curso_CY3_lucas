@@ -201,3 +201,76 @@ table td:first-child {
     transform: scale(1.1);
     background: #d3d3d3;
 }
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.lista, .calculadora {
+    flex: 1;
+    min-width: 400px;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.calculadora {
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.botoes-calc button {
+    width: 50px;
+    height: 40px;
+    background: #ffffff;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.botoes-calc button:hover {
+    transform: scale(1.1);
+    background: #d3d3d3;
+}
+
+.add .botao_add {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #121212;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.add .botao_add:hover {
+    transform: scale(1.1);
+    background-color: #d3d3d3;
+}
