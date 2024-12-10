@@ -37,7 +37,6 @@
             NECESSARY RESOURCES FOR UPGRADES TO - <?php echo $nome; ?>
         </h1>
         <div class="conteudo">
-            <!-- Seção da Lista -->
             <section class="lista">
                 <table>
                     <tr class="cabecalho">
