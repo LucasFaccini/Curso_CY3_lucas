@@ -28,7 +28,7 @@ if($resultado->num_rows == 0){
     }
 }
 else{
-    // echo "Banco de dados já existe! \n";
+     //echo "Banco de dados já existe! \n";
 }
 
 

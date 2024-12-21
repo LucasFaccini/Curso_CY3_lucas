@@ -31,7 +31,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arknights - Editar</title>
+    <title>Editar</title>
     <link rel="stylesheet" href="../../css/editar.css">
     <link rel="icon" type="image/png" href="../../imagens/abaimgs.png">
 </head>

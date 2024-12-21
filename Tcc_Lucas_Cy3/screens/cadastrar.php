@@ -35,7 +35,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/cadastrar.css">
     <link rel="icon" type="image/png" href="../imagens/abaimgs.png">
-    <title>Arknights - Cadastrar</title>
+    <title>Cadastrar</title>
     <script>
         window.onload = function() {
             document.getElementById("nome").value = "";
